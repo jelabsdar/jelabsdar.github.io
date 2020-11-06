@@ -1,0 +1,434 @@
+@font-face {
+  src: url('../fonts/poor-richard/POORICH.TTF');
+  font-family: poor;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Aleo', serif;
+  color: #1b313f;
+  min-width: 445px;
+}
+
+.section h1, h2, h3, h4, h5, h6 {
+  font-family: poor;
+  letter-spacing: .1em;
+}
+
+.primary-color {
+  color:#1b313f
+}
+
+.primary-overlay {
+  background: rgba(27, 49, 63, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+blockquote {
+  border-left: 5px solid #1b313f;
+  }
+
+nav {
+  box-shadow: none;
+}
+
+.nav__link {
+  text-decoration: underline;
+  width:20%;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: rgba(27, 49, 63, 0.3);
+}
+
+.registry-link {
+  word-break: break-all;
+  font-family: 'Aleo', serif;
+}
+
+.side-nav__icon {
+  margin-right:5px;
+}
+
+.main-header {
+  background: url(../img/main-header-SD.jpg);
+  background-position: 72% 46%;
+  height: 530px;
+  color: #fff;
+  position: relative;
+  max-width: 100%;
+}
+
+.main-header--overlay {
+  background: rgba(27, 49, 63, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.showcase {
+  font-family: poor;
+  letter-spacing: .4em;
+  max-width: 100%;
+  margin-top:90px;
+}
+
+.showcase__and-container {
+  overflow: hidden;
+  max-width: 630px;
+  float: none !important;
+  margin: auto;
+}
+
+.showcase__and {
+  font-size: 1.64rem;
+  line-height: 110%;
+  letter-spacing: .2em;
+
+}
+
+.showcase__and:before,
+.showcase__and:after {
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  margin-top:-5px
+}
+
+.showcase__and:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.showcase__and:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.showcase__name {
+  font-size: 4.2rem;
+  text-shadow: 1px 1px 5px #1b313f;
+}
+
+.showcase__date {
+  display: block;
+  font-size: 2.92rem;
+}
+
+.showcase__date:before {
+  overflow: hidden;
+  text-align: center;
+}
+
+.section__img-container img:hover{
+  transform: scale(1.15);
+
+}
+.section__img-container img{
+  transition: transform 4s;
+}
+
+.section {
+  position: relative;
+  background-position: center;
+  min-height: 160px; 
+}
+
+.section__icon {
+  color:#1b313f;
+  font-size: 2rem;
+  margin-left:20px;
+}
+
+.section__header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-couple__img:hover {
+  color:black;
+  /* transform: scale(1.15); */
+}
+.section__details {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section__img-container {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+.sq400 {
+  height: 400px;
+  width: 400px;
+}
+
+.sq270 {
+  height: 270px;
+  width: 270px;
+}
+
+.section-couple__img--groom {
+  position: absolute;
+  width: 135%;
+  left: -90px;
+  top: -200px;
+  /* transform: scale(1.3); */
+}
+.section-couple__img--bride {
+  position: absolute;
+  height: 100%;
+  left: -29px;
+  top: 0px;
+}
+
+.section-os__img {
+  height: 100%;
+}
+
+.section-os__img-1 {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: -58px;
+}
+
+.section-os__img-2,
+.section-os__img-3 {
+  position: absolute;
+  height: 100%;
+  left: -107px;
+  top: 0;
+}
+
+.section-os__img-4 {
+  position: absolute;
+  height: 100%;
+  left: -121px;
+  top: 0px;
+}
+
+.section-passage {
+  height: 400px; 
+  display:flex;
+}
+
+.section__mom-box {
+  overflow: hidden;
+  padding-bottom: 50px !important;
+}
+
+.section__mom-box img{
+  width:100%;
+}
+
+.sction-passage__text{
+  display:flex;
+  margin:auto;
+}
+
+.page-footer {
+  padding-top: 0;
+  background-color: #1b313f;
+}
+
+.section-countdown {
+  height: 400px; 
+}
+
+.section-slider.slider li .caption{
+  top: 50%
+}
+
+.section__album-label {
+  text-align: center;
+padding:10px 0;
+}
+
+.active-link {
+  color: #d847f1;
+  font-weight: bold;
+}
+
+.carousel-item p {
+  font-size: 20px !important;
+}
+
+.tabs .indicator {
+  background-color: #6a1b9a !important;
+}
+
+.btn-extend {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .section-developers,
+  .section-podcast {
+    min-height: 240px;
+  }
+}
+
+.s5cols,
+.m5cols,
+.l5cols,
+.xl5cols {
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s5cols {
+  width: 20%;
+}
+
+/* body min-width: 445px*/
+@media only screen and (max-width: 445px) {
+  .sq400 {
+    width:100%;
+    height: 100%;
+  }
+  .section__details .col{
+    padding: 0;
+  }
+
+  .container--sw100 {
+    width:100%
+  }
+
+  .container--sw100 .section__details{
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-header{
+    height: 420px;
+    background-position: 72% 37%;
+  }
+  
+  .showcase {
+    margin-top:10px;
+  }
+  .showcase__name {
+    font-size: 2.28rem;
+    line-height: 110%;
+  }
+
+  .showcase__date {
+    margin: 10px;
+    font-size: 1.64rem;
+  }
+
+  .showcase__and {
+    font-size: 1rem;
+  }
+
+  .showcase__and:before,
+  .showcase__and:after {  
+    display: none;
+  }
+
+  .showcase h5::before,
+  .showcase h5::after {
+    display:none;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .row .col.m5cols {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .row .col.l5cols {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .row .col.xl5cols {
+    width: 20%;
+  }
+  
+  .px-0
+  {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 2048px) {
+  .main-header{
+    background-size: cover;
+    background-position: 0% 39%;
+  }
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.otro-blockquote{
+  /* font-size: 1.4em;
+  width:60%;
+  margin:50px auto; */
+  font-family:Open Sans;
+  font-style:italic;
+  color: #8d6363;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+.otro-blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.otro-blockquote::after{
+  content: '';
+}
+
+.otro-blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+
+
+

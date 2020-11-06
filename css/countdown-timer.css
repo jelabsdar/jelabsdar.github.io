@@ -1,0 +1,71 @@
+#timer {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .7em;
+    letter-spacing: 5px;
+    margin:auto;
+    text-shadow: 2px 2px 4px #1b313f;
+  }
+
+  .days, .hours, .minutes, .seconds {
+    display: inline-block;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    /* border: 3px solid #1b313f; */
+  }
+
+  .numbers {
+    font-size: 4em;
+    margin-top:15px
+
+  }
+
+  .countdown{
+      margin-left:20px;
+  }
+
+
+
+  .days {
+    /* background-color: burlywood; */
+    position: relative;
+    z-index: 1;
+  }
+
+  /* .days::before, 
+  .hours::before, 
+  .minutes::before,  */
+  .countdown::before {    
+    content: "";
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index:-1;
+}
+
+.days::before  {
+
+    background-image: url('../img/cd-days-sq1.jpeg');
+}
+
+  .hours::before  {
+    background-image: url('../img/cd-hours-sq1.jpeg');
+  }
+
+  .minutes::before  {
+    background-image: url('../img/cd-mins-sq1.jpeg');
+  }
+
+  .seconds::before  {
+    background-image: url('../img/cd-sec-sq1.jpeg');
+  }
